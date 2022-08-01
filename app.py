@@ -5,7 +5,7 @@ import pickle
 
 app = Flask(__name__)
 model_rf = pickle.load(open('randomforestentropymodel.pkl','rb')) 
-model_gb = pickle.load(open('/gaussianmodel.pkl','rb'))
+model_gb = pickle.load(open('gaussianmodel.pkl','rb'))
 
 
 @app.route('/')
